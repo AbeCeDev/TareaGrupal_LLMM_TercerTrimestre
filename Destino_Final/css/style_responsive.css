@@ -23,3 +23,41 @@
         font-size: 15px;
     }
 }
+
+/* Resoluciones mayores a 1300px */
+@media screen and (min-width: 1300px) {
+    body {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+}
+
+/* Tablet en posición vertical (600px - 900px) */
+@media screen and (min-width: 600px) and (max-width: 900px) and (orientation: portrait) {
+    body {
+        font-size: 16px;
+        padding: 20px;
+    }
+    form {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .btn {
+        width: 80%;
+    }
+}
+
+/* Tablet en posición horizontal (600px - 900px) */
+@media screen and (min-width: 600px) and (max-width: 900px) and (orientation: landscape) {
+    body {
+        font-size: 18px;
+        padding: 30px;
+    }
+    form {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .btn {
+        width: 70%;
+    }
+}

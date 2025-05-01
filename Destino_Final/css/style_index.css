@@ -26,8 +26,8 @@ body {
 }
 
 .cuerpo {
-    margin-left: 7rem;
-    margin-right:3rem;
+    margin-left: 4rem;
+    margin-right: 3rem;
 }
 
 .cuerpo header h1 {
@@ -56,8 +56,8 @@ body {
 }
 
 aside {
-    margin-left: 2rem;
-    margin-right: 7rem;
+    margin-left: -1.5rem;
+    margin-right: 1rem;
 }
 
 aside h2 {
@@ -96,6 +96,7 @@ aside h2 {
     margin-top: 3rem;
     padding-top: 2rem;
     padding-left: 4rem;
+    padding-right: 4rem;
 }
 
 .fin_pagina p {
