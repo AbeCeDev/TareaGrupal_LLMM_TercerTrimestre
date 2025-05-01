@@ -1,0 +1,25 @@
+
+/*Teléfono vertical (<600px)*/
+@media screen and (max-width: 600px) and (orientation: portrait) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+    form {
+        width: 100%;
+    }
+    .btn {
+        width: 100%;
+    }
+}
+
+/*Teléfono horizontal (<900px)*/
+@media screen and (max-width: 900px) and (orientation: landscape) {
+    .btn {
+        width: 90%;
+        margin: 10px auto;
+    }
+    input, select {
+        font-size: 15px;
+    }
+}

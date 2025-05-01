@@ -222,23 +222,32 @@ textarea {
 }
 
 /* Botones */
-button {
-    border: none;
-    background-color: #8B0000;
+
+.btn{
+    background-color: darkred;
+    color:white;
+    text-decoration: none;
+    padding:15px 20px;
+    margin:10px 10px;
+    display: inline-block;
+    text-align: center;
+}
+/* Contenedor centrado */
+.btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn:hover{
+    opacity: 0.7;
+}
+.big{
     font-size: 18px;
-    color: white;
-    width: 45%;
-    height: 45px;
-    border-radius: 5px;
-    margin: 10px 2.5%;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    padding: 15px 30px;
 }
-
-button:hover {
-    background-color: #a60000;
+.border-radius{
+    border-radius: 100px;
 }
-
 /* Clases de campo */
 .campo {
     margin-top: 1rem;
