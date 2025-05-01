@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_contacto.css">
+    
+    <link rel="shortcut icon" href="img//japan_icon.png" type="image/x-icon">
+    <title>Destino Final Agencia de Viajes - Contacto</title>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="cabecera">
+            <header>
+                <img id="logo" src="img/logo_destino.png" alt="Logo Destino Final">
+                <nav class="menu-desplegable">
+                    <ul class="menu">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li>
+                            <a href="nuestros_destinos.html">Destinos</a>
+                            <ul>
+                                <li><a href="tokio.html">Tokio</a></li>
+                                <li><a href="kamakura.html">Kamakura</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="quienes_somos.html">Quienes somos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+
+    <h2>Datos de contacto</h2>
+
+    <form>
+        <!-- DATOS PERSONALES -->
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <label for="nombre">Nombre:</label>
+            <div class="campo">
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <label for="apellidos">Apellidos:</label>
+            <div class="campo">
+                <input type="text" id="apellidos" name="apellidos" required>
+            </div>
+
+            <label for="direccion">Dirección:</label>
+            <div class="campo">
+                <input type="text" name="direccion" required placeholder="Calle">
+                <input type="text" name="direccion" required placeholder="Número">
+                <input type="text" name="direccion" required placeholder="Piso">
+                <input type="text" name="direccion" required placeholder="C.P">
+                <input type="text" name="direccion" required placeholder="Ciudad"> 
+                <input type="text" name="direccion" required placeholder="Provincia">
+                <input type="text" name="direccion" required placeholder="País">
+            </div>
+
+            <label for="telefono">Teléfono:</label>
+            <div class="campo">
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+
+            <label for="email">Correo electrónico:</label>
+            <div class="campo">
+                <input type="email" id="email" name="email" required>
+            </div>
+        </fieldset>
+
+        <!-- SEXO -->
+        <fieldset>
+            <legend>Sexo Usuario</legend>
+            <div class="campo2">
+                <input type="radio" id="sexo_h" name="sexo" value="H">
+                <label for="sexo_h">Hombre</label>
+            </div>
+            <div class="campo2">
+                <input type="radio" id="sexo_m" name="sexo" value="M">
+                <label for="sexo_m">Mujer</label>
+            </div>
+            <div class="campo2">
+                <input type="radio" id="sexo_nr" name="sexo" value="NR">
+                <label for="sexo_nr">Prefiero no decir</label>
+            </div>
+        </fieldset>
+
+        <!-- FECHA DE NACIMIENTO -->
+        <fieldset>
+            <legend>Fecha de nacimiento</legend>
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+        </fieldset>
+
+        <!-- PERSONAS -->
+        <fieldset>
+            <legend>Personas</legend>
+            <label for="personaje">Selecciona el número de personas:</label>
+            <select name="personaje" id="personaje" onchange="mostrarCampoExtra()">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="mas">Más de 15</option>
+            </select>
+        </fieldset>
+
+        <!-- TIPO DE VIAJE -->
+        <fieldset>
+            <legend>Tipo de viaje</legend>
+            <label for="tipo_viaje">Selecciona el tipo de viaje:</label>
+            <select name="tipo_viaje" id="tipo_viaje">
+                <option value="cultural">Cultural</option>
+                <option value="aventura">Aventura</option>
+                <option value="relajacion">Relajación</option>
+                <option value="gastronomico">Gastronómico</option>
+            </select>
+        </fieldset>
+
+        <!-- DESTINO -->
+        <fieldset>
+            <legend>Destino</legend>
+            <label for="destino">Selecciona el destino:</label>
+            <select name="destino" id="destino">
+                <option value="tokio">Tokio</option>
+                <option value="kamakura">Kamakura</option>
+                <option value="osaka">Osaka</option>
+                <option value="kioto">Kioto</option>
+            </select>
+        </fieldset>
+
+        <!-- FECHAS -->
+        <fieldset>
+            <legend>Fecha de salida y llegada</legend>
+            <label for="fecha_salida">Fecha de salida:</label>
+            <input type="date" id="fecha_salida" name="fecha_salida">
+            <label for="fecha_llegada">Fecha de llegada:</label>
+            <input type="date" id="fecha_llegada" name="fecha_llegada">
+        </fieldset>
+        
+        <!-- SEGURO -->
+        <fieldset>
+            <legend>Seguro de viaje</legend>
+            <label for="seguro">¿Deseas incluir un seguro de viaje?</label>
+            <select name="seguro" id="seguro">
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+            </select>
+        </fieldset>
+
+        <!-- COMENTARIOS -->
+        <fieldset>
+            <legend>Comentarios</legend>
+            <textarea id="comentarios" name="comentarios"></textarea>
+        </fieldset>
+
+        <!-- ACEPTACIÓN -->
+        <fieldset>
+            <legend>Aceptación de condiciones</legend>
+            <input type="checkbox" id="aceptar" name="aceptar" required>
+            <label for="aceptar">Acepto las condiciones de uso y la política de privacidad</label>
+        </fieldset>
+
+        <!-- BOTONES -->
+        <div class="campo">
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </div>
+    </form>
+
+    
+    <footer class="fin_pagina">
+        <h3>Contáctanos</h3>
+        <p>
+            info@destinofinal.es &nbsp; 91 111 11 11 / 633 33 33 33
+        </p>
+        <p>
+            Copyright © 2025 UNIR. Consulta el Aviso Legal, la Política de Privacidad y la Protección de Datos. 
+        </p>
+    </footer>
+   
+</body>
+</html>
