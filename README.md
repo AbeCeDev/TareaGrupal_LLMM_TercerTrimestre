@@ -2,8 +2,11 @@
 
 # Destino Final Agencia de Viajes
 
-## Resumen del Proyecto
-Este proyecto es una página web para una agencia de viajes especializada en Japón. La idea es ofrecer una experiencia visual atractiva, con información clara y un diseño adaptable para cualquier dispositivo. El trabajo fue realizado por un equipo de tres personas, cada una aportando su granito de arena.
+Página web para una agencia de viajes especializada en Japón. La idea es ofrecer una experiencia visual atractiva, con información clara y un diseño responsive para cualquier dispositivo. 
+Trabajo realizado por:
+- Elia Martínez Moral
+- Ignacio Martínez Ortega
+- Abraham Cantalejo Guerrero
 
 ---
 
@@ -36,13 +39,13 @@ Destino_Final/
 
 ## Reparto de la tarea
 
-### **Elia Martinez**
+### **Elia**
 Estructura de los archivos y base de la web creando el codigo HTML y CSS iniciales.
 
-### **Nacho Martinez**
+### **Nacho**
 Diseño y creación del formulario de contacto y parte del responsive y comentariado.
 
-### **Abraham Cantalejo**
+### **Abraham**
 Menú y submenú, parte del responsive, comentariado del código y base de la memoria del proyecto.
 
 ---
