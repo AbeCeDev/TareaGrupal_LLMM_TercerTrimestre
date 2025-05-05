@@ -1,47 +1,48 @@
+/* Reinicio de márgenes y rellenos para evitar inconsistencias entre navegadores */
 * {
     margin: 0;
     padding: 0;
 }
-
+/* Establece la tipografía base para todo el sitio */
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/* Contenedor principal que organiza el diseño en columnas */
 #contenedor {
     display: flex;
     flex-direction: column;
 }
-
+/* Cabecera que contiene el logo y el menú de navegación */
 #cabecera {
     display: flex;
     margin: 0rem 0rem 2rem 3rem;
 }
-
+/* Logo de la agencia con un tamaño fijo */
 #logo {
     width: 10rem;
 }
-
+/* Sección principal de información que se alinea en fila */
 #informacion {
     display: flex;
 }
-
+/* Cuerpo del contenido principal con márgenes laterales */
 .cuerpo {
     margin-left: 4rem;
     margin-right: 3rem;
 }
-
+/* Estilo del encabezado principal */
 .cuerpo header h1 {
     font-size: 2rem;
     color: rgb(192, 2, 2);
     text-align: left;
     margin-bottom: 1rem;
 }
-
+/* Imagen del artículo que ocupa el 100% del ancho disponible */
 #articulo_img{
     width: 100%;
     margin-bottom: 2rem;
 }
-
+/* Estilo de los párrafos dentro del contenedor principal */
 #contenedor p {
     margin-top: 1rem;
     font-size: 1rem;
@@ -54,18 +55,18 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+/* Estilo del lateral derecho (aside) */
 aside {
     margin-left: -1.5rem;
     margin-right: 1rem;
 }
-
+/* Estilo del encabezado secundario en el lateral derecho */
 aside h2 {
     color: rgb(161, 142, 142);
     margin-bottom: 1rem;
     margin-right: 2rem;
 }
-
+/* Estilo del párrafo dentro de la sección de extensiones */
 #extensiones_img {
     margin: 2rem;
     margin-left: 4rem;
@@ -73,7 +74,7 @@ aside h2 {
     border-radius: 30px;
     border: 1px solid black;
 }
-
+/* Estilo de la sección de extensiones */
 .extensiones {
     text-align: center;
 }
@@ -82,12 +83,12 @@ aside h2 {
     margin-left: 14rem;
     margin-top: 1rem;
 }
-
+/* Estilo del botón de contacto en la sección de extensiones */
 #boton {
     width: 6rem;
     height: 2.5rem;
 }
-
+/* Estilo del pie de página */
 .fin_pagina {
     background-color: rgb(155, 2, 2);
     color: white;
@@ -98,13 +99,13 @@ aside h2 {
     padding-left: 4rem;
     padding-right: 4rem;
 }
-
+/* Estilo de los párrafos dentro del pie de página */
 .fin_pagina p {
     line-height: 1.5;
     text-align: left;
 }
 
-/* Menú desplegable */
+/* Menú desplegable con estilo horizontal */
 .menu-desplegable .menu {
     list-style: none;
     padding: 0;

@@ -2,11 +2,10 @@
     margin: 0;
     padding: 0;
 }
-
+/* Fuente base */
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-
 #contenedor {
     display: flex;
     flex-direction: column;
@@ -16,7 +15,7 @@ body {
     display: flex;
     margin: 0rem 0rem 2rem 3rem;
 }
-
+/* Tamaño del logo */
 #logo {
     width: 10rem;
 }
@@ -29,7 +28,7 @@ body {
     margin-left: 7rem;
     margin-right:3rem;
 }
-
+/* Título principal de la sección 'Quiénes somos' */
 .cuerpo header h1 {
     font-size: 2rem;
     color: rgb(192, 2, 2);
@@ -42,7 +41,7 @@ body {
     margin-bottom: 2rem;
 
 }
-
+/* Estilo general para los párrafos en el contenido */
 #contenedor p {
     margin-top: 1rem;
     font-size: 1rem;
@@ -50,7 +49,7 @@ body {
     margin-bottom: 1rem;
     text-align: justify;
 }
-
+/* Pie de la sección principal con el botón "Llámanos" */
 .cuerpo footer {
     justify-content: center;
     align-items: center;
@@ -67,29 +66,17 @@ aside h2 {
     margin-right: 2rem;
 }
 
-#extensiones_img {
-    margin: 2rem;
-    margin-left: 4rem;
-    height: 10rem;
-    border-radius: 30px;
-    border: 1px solid black;
-}
-
+/* Contenedor para el botón "Llámanos" en el footer de la sección */
 .extensiones {
     text-align: center;
 
-}
-
-.extensiones p {
-    margin-left: 17rem;
-    margin-top: 1rem;
 }
 
 #boton {
     width: 6rem;
     height: 2.5rem;
 }
-
+/* Pie de página general con datos de contacto y derechos legales */
 .fin_pagina {
     background-color: rgb(155, 2, 2);
     color: white;

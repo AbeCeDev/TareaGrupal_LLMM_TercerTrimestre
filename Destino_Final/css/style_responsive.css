@@ -1,6 +1,7 @@
 
 /*Teléfono vertical (<600px)*/
 @media screen and (max-width: 600px) and (orientation: portrait) {
+    /* Ajuste general de texto y espaciado para pantallas pequeñas */
     body {
         float: left;
         font-size: 14px;
@@ -9,11 +10,13 @@
     #articulo_img {
         width: 90%;
     }
+    /* Imagen de extensiones ajustada*/
     #extensiones_img {
         margin-left: 2rem;
         width: 80%;
         height: 80%;
     }
+    /* Elimina el margen izquierdo del párrafo*/
     .extensiones p {
         margin-left: 0;
     }
@@ -24,14 +27,17 @@
 
 /*Teléfono horizontal (<900px)*/
 @media screen and (max-width: 900px) and (orientation: landscape) {
+    /* Texto más pequeño y espaciado reducido */
     body {
         float: left;
         font-size: 14px;
         padding: 10px;
     }
+    /* Imagen del artículo reducida */
     #articulo_img {
         width: 90%;
     }
+    /* Imagen de extensiones adaptada al ancho disponible */
     #extensiones_img {
         margin-left: 2rem;
         width: 80%;
@@ -40,6 +46,7 @@
     .extensiones p {
         margin-left: 2rem;
     }
+    /* Mejora la legibilidad de formularios */
     input, select {
         font-size: 15px;
     }
@@ -52,6 +59,7 @@
         margin: 0 auto;
         width: auto;
     }
+    /* Restaura el margen para grandes resoluciones */
     .extensiones p {
         margin-left: 15rem;
     }
@@ -64,6 +72,7 @@
         font-size: 14px;
         padding: 10px;
     }
+    /* Imagenes con ajuste de tamaño */
     #articulo_img {
         width: 90%;
     }
