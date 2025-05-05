@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style_destinos.css">
     <link rel="stylesheet" href="css/style_responsive.css">
+    <link rel="stylesheet" href="css/style_menu.css">
     <link rel="shortcut icon" href="img//japan_icon.png" type="image/x-icon">
     <title>Destino Final Agencia de Viajes - Destinos</title>
 </head>
@@ -16,8 +17,11 @@
             <header>
                 <!-- Logo de la agencia -->
                 <img id="logo" src="img/logo_destino.png" alt="Logo Destino Final">
+                <!-- Menú de la página -->
                 <nav class="menu-desplegable">
-                    <ul class="menu">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox" />
+                <label for="menu-toggle" class="menu-toggle">&#9776;</label>
+                <ul class="menu" id="menu-principal">
                         <!-- Menú de la página -->
                         <li><a href="index.html">Inicio</a></li>
                         <li>

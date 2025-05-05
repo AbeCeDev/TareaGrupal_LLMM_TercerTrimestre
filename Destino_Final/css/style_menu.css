@@ -1,0 +1,124 @@
+/* Menú desplegable con estilo horizontal */
+.menu-desplegable .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: relative;
+}
+
+.menu-desplegable .menu > li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.menu-desplegable .menu > li > a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: white;
+    color: rgb(155, 2, 2);
+    font-size: 1.2rem;
+    border: 2px solid rgb(155, 2, 2);
+    border-radius: 5px;
+}
+
+.menu-desplegable .menu > li > a:hover {
+    background-color: rgb(192, 2, 2);
+    color: white;
+}
+
+/* Submenú oculto */
+.menu-desplegable .menu > li ul {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    background-color: #444;
+    min-width: 150px;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    z-index: 200;
+}
+
+.menu-desplegable .menu > li:hover ul {
+    display: block;
+    list-style: none;
+}
+
+/* Estilo de los enlaces del submenú */
+.menu-desplegable .menu > li ul li a {
+    display: block;
+    padding: 10px 25px;
+    text-decoration: none;
+    background-color: #f8eaea;
+    color: rgb(155, 2, 2);
+    border: 1px dashed rgb(192, 2, 2);
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 6px 10px;
+    border-bottom: 1px solid #555;
+    transition: background 0.2s, color 0.2s;
+}
+
+.menu-desplegable .menu > li ul li a:hover {
+    background-color: #555;
+    color: white;
+    border-color: rgb(155, 2, 2);
+}
+.menu-toggle-checkbox {
+    display: none;
+}
+
+.menu-desplegable {
+    position: relative;
+}
+
+/* Estilo del menú hamburguesa */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    color: rgb(155, 2, 2);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    background: none;
+    border: none;
+}
+
+/* Responsive del menú hamburguesa */
+@media (max-width: 900px) {
+    .menu-toggle {
+        display: block;
+        position: relative;
+        z-index: 102;
+    }
+    .menu-desplegable .menu {
+        display: none;
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        width: 200px;
+        border-radius: 10px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+        z-index: 101;
+    }
+    .menu-toggle-checkbox:checked + .menu-toggle + .menu {
+        display: flex;
+    }
+    .menu-desplegable .menu > li {
+        margin: 0;
+        border-bottom: 1px solid #eee;
+    }
+    .menu-desplegable .menu > li > a {
+        color: rgb(155, 2, 2);
+        background: none;
+        border: none;
+        border-radius: 0;
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+}
