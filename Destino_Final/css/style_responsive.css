@@ -2,22 +2,43 @@
 /*Teléfono vertical (<600px)*/
 @media screen and (max-width: 600px) and (orientation: portrait) {
     body {
+        float: left;
         font-size: 14px;
         padding: 10px;
     }
-    form {
-        width: 100%;
+    #articulo_img {
+        width: 90%;
     }
-    .btn {
+    #extensiones_img {
+        margin-left: 2rem;
+        width: 80%;
+        height: 80%;
+    }
+    .extensiones p {
+        margin-left: 0;
+    }
+    form {
         width: 100%;
     }
 }
 
 /*Teléfono horizontal (<900px)*/
 @media screen and (max-width: 900px) and (orientation: landscape) {
-    .btn {
+    body {
+        float: left;
+        font-size: 14px;
+        padding: 10px;
+    }
+    #articulo_img {
         width: 90%;
-        margin: 10px auto;
+    }
+    #extensiones_img {
+        margin-left: 2rem;
+        width: 80%;
+        height: 80%;
+    }
+    .extensiones p {
+        margin-left: 2rem;
     }
     input, select {
         font-size: 15px;
@@ -29,21 +50,34 @@
     body {
         max-width: 1300px;
         margin: 0 auto;
+        width: auto;
+    }
+    .extensiones p {
+        margin-left: 15rem;
     }
 }
 
 /* Tablet en posición vertical (600px - 900px) */
 @media screen and (min-width: 600px) and (max-width: 900px) and (orientation: portrait) {
     body {
-        font-size: 16px;
-        padding: 20px;
+        float: left;
+        font-size: 14px;
+        padding: 10px;
+    }
+    #articulo_img {
+        width: 90%;
+    }
+    #extensiones_img {
+        margin-left: 2rem;
+        width: 80%;
+        height: 80%;
+    }
+    .extensiones p {
+        margin-left: 7rem;
     }
     form {
         width: 80%;
         margin: 0 auto;
-    }
-    .btn {
-        width: 80%;
     }
 }
 
@@ -53,11 +87,11 @@
         font-size: 18px;
         padding: 30px;
     }
+    .extensiones p {
+        margin-left: 5rem;
+    }
     form {
         width: 70%;
         margin: 0 auto;
-    }
-    .btn {
-        width: 70%;
     }
 }
